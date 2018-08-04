@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.oneawadhcenter.halwits"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 7
+        versionName "1.0"
+
+        manifestPlaceholders = [kontext_app_id: "kontext app id",
+                                kontext_app_secret: "kontext app secret",
+                                kontext_google_project_number: "REMOTE"]
+
+
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    mavenCentral()
+}
+
+allprojects{
+    repositories{
+        jcenter()
+        flatDir{
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.google.android.gms:play-services-appindexing:9.6.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.14.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:cardview-v7:25.0.+'
+    compile 'com.android.support:recyclerview-v7:25.0.+'
+    compile 'com.google.firebase:firebase-messaging:9.6.0'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile(name: 'kontextSdk', ext: 'aar')
+    compile 'com.google.android.gms:play-services-nearby:9.6.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+}
+apply plugin: 'com.google.gms.google-services'

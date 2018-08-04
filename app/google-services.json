@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "266514865982",
+    "firebase_url": "https://oneawadhcenter.firebaseio.com",
+    "project_id": "oneawadhcenter",
+    "storage_bucket": "oneawadhcenter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266514865982:android:a9bb618100dfa0b9",
+        "android_client_info": {
+          "package_name": "com.oneawadhcenter.halwits"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266514865982-l18anasdoj976jla8ret5rkidcga2qof.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.oneawadhcenter.halwits",
+            "certificate_hash": "3d82b89899cf47eb4a7ef477a0261ec03b104985"
+          }
+        },
+        {
+          "client_id": "266514865982-hia39398qdpcnd0ur4u56c2146jd5cbt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCAz-Zr5ANvuTat4_LgFBX46tsKQcpMYU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266514865982-hia39398qdpcnd0ur4u56c2146jd5cbt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

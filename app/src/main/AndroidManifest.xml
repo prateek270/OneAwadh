@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oneawadhcenter.halwits">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Promotions" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".navigation"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+
+        <service android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".otp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".register"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Contact_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Help"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="3afb0e5f6a294a2101b6c39e4ba3ffe6a6698ed5" />
+
+        <activity android:name=".movies" />
+        <activity
+            android:name=".Read_Contact"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Stores"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Food_Court"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Claim"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Coupon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Claim_coupon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyProfile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".forgetpass"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ChangePass"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Otp2"
+            android:theme="@style/AppTheme.NoActionBar"/>
+    </application>
+
+</manifest>

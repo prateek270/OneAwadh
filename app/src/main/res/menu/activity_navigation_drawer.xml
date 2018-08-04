@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:id="@+id/group1" android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/promotions"
+            android:icon="@drawable/menu_promotions"
+            android:title="Offers" />
+
+        <item
+            android:id="@+id/events"
+            android:icon="@drawable/menu_events"
+            android:title="Events" />
+
+        <item
+            android:id="@+id/movies_running"
+            android:icon="@drawable/menu_movies"
+            android:title="Movies" />
+
+
+        <item
+            android:id="@+id/stores"
+            android:icon="@drawable/menu_stores"
+            android:title="Stores" />
+
+
+        <item
+            android:id="@+id/food_court"
+            android:icon="@drawable/menu_foodcourt"
+            android:title="Food Court" />
+
+
+        <item
+            android:id="@+id/coupon"
+            android:icon="@drawable/coupon_icon"
+            android:title="Coupons" />
+    </group>
+
+
+
+    <group android:id="@+id/group2" android:checkableBehavior="single">
+        <item
+            android:id="@+id/myprofile"
+            android:icon="@drawable/profile_gray"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/invite"
+            android:icon="@drawable/menu_invite"
+            android:title="Invite Friends" />
+
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/share_app"
+            android:title="Share App" />
+        <item
+            android:id="@+id/help"
+            android:icon="@drawable/menu_help"
+            android:title="Help/Feedback" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/menu_logout"
+            android:title="Logout" />
+    </group>
+
+
+
+</menu>
